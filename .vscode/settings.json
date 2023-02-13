@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "Prodocts shop",
+            "connectString": "postgres://qbguhxpv:nMo3-fcTPEIxUHGANC3oyJvH4bVbxBi5@raja.db.elephantsql.com/qbguhxpv"
+        }
+    ]
+}

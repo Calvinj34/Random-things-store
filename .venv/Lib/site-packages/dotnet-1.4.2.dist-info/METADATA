@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dotnet
+Version: 1.4.2
+Summary: Python Interoperability with the Microsoft .NET Framework
+Home-page: https://github.com/sadhbh-c0d3/pydotnet
+Author: Sonia Kolasinska
+Author-email: sonia.kolasinska.pro@gmail.com
+Maintainer: Sonia Kolasinska
+Maintainer-email: sonia.kolasinska.pro@gmail.com
+License: MIT
+Platform: Windows (x86 and x64)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: System
+License-File: LICENSE
+
+Allows seamless integration of .NET (e.g. C#) code with Python (CPython, Anaconda).
+
+It runs as hybrid native code and CLR code. The CLR instance is created once
+you import dotnet module into your Python code. Then you can load assemblies
+and import namespaces and types directly into Python code, and use as Python
+objects. This all runs within Python process, and no IPC is used to accomplish
+this. Boost.Python has been used to write C++ layer, which glues Python and
+Managed (.NET/CLR/C#) code.
+
