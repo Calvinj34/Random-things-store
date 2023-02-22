@@ -3,6 +3,10 @@ from flask import render_template, request, redirect, url_for, flash
 from .forms import UserCreationForm, loginform, ItemSubmitForm
 from .models import User, Item, Cart
 from flask_login import login_user, logout_user, current_user, login_required
+from flask_cors import CORS, cross_origin
+
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 
 @app.route('/signup', methods=["GET", "POST"])
